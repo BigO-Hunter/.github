@@ -51,6 +51,7 @@ filterable by row. Private repos hold in-progress work.
 - [openai/math](https://github.com/openai/math) — solution corpus drawn from in several filings (attributed per artifact).
 - [AxiomMath/PrimeGapsLib](https://github.com/AxiomMath/PrimeGapsLib) + [kimihiro64/bombieri-vinogradov](https://github.com/kimihiro64/bombieri-vinogradov) — composed in the prime-gaps H1 ≤ 246 formalization.
 - [Anthropic Zeta23](https://github.com/bigospeedrun/verifier) — critical-line-zeros breakthrough proof; our zeta packages adapt its results (attributed per filing).
+- [spicylemonade/c-hd-proof](https://github.com/spicylemonade/c-hd-proof) — Frontier/C-HD comparator our SSSP submissions stage (dependency pin: `bigospeedrun/c-hd-proof@98c53acc`); our t3-cap-param extension stays local — upstreaming evaluated 2026-11-08, not warranted (frozen artifact).
 
 ## Policy
 
