@@ -22,7 +22,7 @@ filterable by row. Private repos hold in-progress work.
 - **APSP & dynamics** (`apsp`) — `apsp-bound`, `minplus-widgets`, `bonifaci-lane`
 - **Snaky** (`snaky`) — `snaky-nineteen` (19-move), `snaky-twenty` (20-move), `snaky-conditional`,
   `snaky-scout` *(private)*
-- **Subset Sum** (`subset-sum`) — `subset-sum-mitm`, `subset-sum-half` (α=1/2 deterministic MITM),
+- **Subset Sum** (`subset-sum`) — `subset-sum` (α=1/2 deterministic MITM),
   `subsetsum-lean` *(private)*, `subset-sum-l25` *(private)*
 - **Matroid Prophet** (`matroid-prophet`) — `matroid-prophet-exact-B` (exact C(B)),
   `matroid-prophet-tight-corner`, `matroid-statement` *(private)*
@@ -30,22 +30,21 @@ filterable by row. Private repos hold in-progress work.
 - **Combinatorics** (`combinatorics`) — `ramsey-5-5-lean-certificate` (R(5,5) ≥ 42),
   `schur-number-8-lean` (S(8) ≥ 5372), `admissible-tuples-lean`, `vdw-first-rung`,
   `van-der-waerden` (c = 1/20000), `sidorenko-counterexample-lean`, `prime-gaps-246-lean` (H1 ≤ 246)
-- **Prime gaps 182** (`prime-gaps`) — `pg182-frame`, `pg182-c0`, `pg182-d1`, `pg182-d2`,
-  `kloosterman-sheaf` *(all private)*
+- **Prime gaps 182** (`prime-gaps`) — `prime-gaps-182` *(private)*
 - **Number Theory** (`number-theory`) — `pi-irrationality-measure`,
   `catalan-irrationality-measure-410` (μ(G) ≤ 410), `catalan-295-litsey-port` (μ(G) ≤ 295),
   `catalan-constant-gen5` (μ(G) ≤ 528), `dft-halitziyav6-rate`, `heilbronn-triangle-lean`,
   `heilbronn-triangle-ten237` (1/10^237), `heilbronn-bar` *(private)*
-- **Z is Diophantine in Q** (`z-diophantine`) — `z-diophantine-research`, `dzq-lean`,
-  `dzq-lean-formal` *(the latter two private)*
+- **Z is Diophantine in Q** (`z-diophantine`) — `z-diophantine-research`, `dzq-lean` *(private)*
 - **Zeta / Riemann** (`zeta`) — `critical-line-269-400`, `quasi-riemann-baseline-rerun`,
-  `QuasiRiemannTracker`, `zeta-zeros-submission`, `zeta-zeros-proposal`, `zeta-measure-certificates`,
-  `weil-verify`, `knausgard-cert`, `clz-frontier`, `clz-cert`, `qrt-exec` *(the last five private)*
+  `QuasiRiemannTracker`, `zeta-zeros-submission`, `zeta-measure-certificates`,
+  `weil-verify`, `knausgard-cert`, `clz-cert`, `qrt-exec` *(the last four private)*
 - **Physics** (`physics`) — `haldane-gap-beta13` (γ_L > 771/5000)
 - **Sensitivity** (`sensitivity`) — `average-sensitivity-lean`
 - **Integer Multiplication** (`integer-mult`) — `integer-mult-bounds` (κ > 2⁻¹⁵)
 - **Support & tooling** (`support`) — `bigospeedrun-agent-kit` (the methodology),
   `lemma-library`, `bochner-lane`, `leaps-in-bounds`, `omr-statement`, `mathlib4` (dependency pin),
+  `mathlib4-1` (secondary working fork; ref review pending),
   `staircase-port` *(private)*, `verifier`, `site`, `c-hd-proof`, `prove2me_workspace`
 
 ## Repository lifecycle
@@ -61,6 +60,19 @@ or the reason the baseline is retained.
 `verify-chain-jobs` was already identical. Every source branch was verified as an ancestor of the
 corresponding target branch before `verifier-1` was archived read-only; there were no source tags.
 No lossy same-topic merges.
+
+### 2026-11-20 umbrella consolidation
+
+- `zeta-zeros-proposal` is archived in `zeta-zeros-submission/proposal/`.
+- `dzq-lean-formal` is archived in `dzq-lean/formal/`.
+- `pg182-frame` was renamed `prime-gaps-182`; `pg182-c0`, `pg182-d1`, `pg182-d2` and
+  `kloosterman-sheaf` are archived in its named lane directories.
+- `subset-sum-half` was renamed `subset-sum`; `subset-sum-mitm` is archived in `mitm/`.
+- `clz-frontier` is archived in `clz-cert/frontier/`.
+
+Every source commit was verified as an ancestor of its umbrella's remote main before archival.
+The umbrella READMEs map active proof work versus historical proposal/frontier material and name
+any optional external regeneration datasets. These were history-preserving merges, not file dumps.
 
 ## Upstreams & projects we work with
 
