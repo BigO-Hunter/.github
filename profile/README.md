@@ -18,17 +18,15 @@ Every repo carries the `big-o-speedrun` umbrella topic plus one row topic, so th
 filterable by row. Private repos hold in-progress work.
 
 - **Directed SSSP** (`sssp`) — `sssp-chd-row` (n · n log^(2/3)), `sssp-nlogn` (n log n · n log²),
-  `sssp-n2` (n²), `sssp-dmsy-stack` *(private)*, `capped-relax-sssp`, `relax-completeness`
+  `sssp-n2` (n²), `sssp-dmsy-stack` *(private)*, `relax-completeness`
 - **APSP & dynamics** (`apsp`) — `apsp-bound`, `minplus-widgets`, `bonifaci-lane`
-- **Snaky** (`snaky`) — `snaky-nineteen` (19-move), `snaky-twenty` (20-move), `snaky-conditional`,
-  `snaky-scout` *(private)*
+- **Snaky** (`snaky`) — `snaky-nineteen` (19-move), `snaky-twenty` (20-move), `snaky-conditional`
 - **Subset Sum** (`subset-sum`) — `subset-sum` (α=1/2 deterministic MITM),
   `subsetsum-lean` *(private)*, `subset-sum-l25` *(private)*
-- **Matroid Prophet** (`matroid-prophet`) — `matroid-prophet-exact-B` (exact C(B)),
-  `matroid-prophet-tight-corner`, `matroid-statement` *(private)*
+- **Matroid Prophet** (`matroid-prophet`) — `matroid-prophet-tight-corner`, `matroid-statement` *(private)*
 - **Matmul** (`matmul`) — `matmul-frobenius` *(private)* — Frobenius lane, ω < 9/4
 - **Combinatorics** (`combinatorics`) — `ramsey-5-5-lean-certificate` (R(5,5) ≥ 42),
-  `schur-number-8-lean` (S(8) ≥ 5372), `admissible-tuples-lean`, `vdw-first-rung`,
+  `schur-number-8-lean` (S(8) ≥ 5372), `admissible-tuples-lean`,
   `van-der-waerden` (c = 1/20000), `sidorenko-counterexample-lean`, `prime-gaps-246-lean` (H1 ≤ 246)
 - **Prime gaps 182** (`prime-gaps`) — `prime-gaps-182` *(private)*
 - **Number Theory** (`number-theory`) — `pi-irrationality-measure`,
@@ -36,7 +34,7 @@ filterable by row. Private repos hold in-progress work.
   `catalan-constant-gen5` (μ(G) ≤ 528), `dft-halitziyav6-rate`, `heilbronn-triangle-lean`,
   `heilbronn-triangle-ten237` (1/10^237), `heilbronn-bar` *(private)*
 - **Z is Diophantine in Q** (`z-diophantine`) — `z-diophantine-research`, `dzq-lean` *(private)*
-- **Zeta / Riemann** (`zeta`) — `critical-line-269-400`, `quasi-riemann-baseline-rerun`,
+- **Zeta / Riemann** (`zeta`) — `quasi-riemann-baseline-rerun`,
   `QuasiRiemannTracker`, `zeta-zeros-submission`, `zeta-measure-certificates`,
   `weil-verify`, `knausgard-cert`, `clz-cert`, `qrt-exec` *(the last four private)*
 - **Physics** (`physics`) — `haldane-gap-beta13` (γ_L > 771/5000)
@@ -68,6 +66,10 @@ No lossy same-topic merges.
   `kloosterman-sheaf` are archived in its named lane directories.
 - `subset-sum-half` was renamed `subset-sum`; `subset-sum-mitm` is archived in `mitm/`.
 - `clz-frontier` is archived in `clz-cert/frontier/`.
+- `capped-relax-sssp` is archived in `relax-completeness/engine-spec/`.
+- `vdw-first-rung` is archived in `van-der-waerden/baseline/`.
+- `matroid-prophet-exact-B`, `snaky-scout` and `critical-line-269-400` are archived as
+  completed or explicitly superseded artifacts; they were not deleted and remain readable.
 - `mathlib4-1` is archived after all 453 of its refs were preserved in `mathlib4`: 70 shared
   branches were already identical, `bump/v4.37.0` and `staging` were fast-forwarded,
   `marginal_itp` was created, seven daily tags were copied, and the divergent `master` and
