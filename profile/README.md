@@ -44,7 +44,6 @@ filterable by row. Private repos hold in-progress work.
 - **Integer Multiplication** (`integer-mult`) — `integer-mult-bounds` (κ > 2⁻¹⁵)
 - **Support & tooling** (`support`) — `bigospeedrun-agent-kit` (the methodology),
   `lemma-library`, `bochner-lane`, `leaps-in-bounds`, `omr-statement`, `mathlib4` (dependency pin),
-  `mathlib4-1` (secondary working fork; ref review pending),
   `staircase-port` *(private)*, `verifier`, `site`, `c-hd-proof`, `prove2me_workspace`
 
 ## Repository lifecycle
@@ -69,6 +68,11 @@ No lossy same-topic merges.
   `kloosterman-sheaf` are archived in its named lane directories.
 - `subset-sum-half` was renamed `subset-sum`; `subset-sum-mitm` is archived in `mitm/`.
 - `clz-frontier` is archived in `clz-cert/frontier/`.
+- `mathlib4-1` is archived after all 453 of its refs were preserved in `mathlib4`: 70 shared
+  branches were already identical, `bump/v4.37.0` and `staging` were fast-forwarded,
+  `marginal_itp` was created, seven daily tags were copied, and the divergent `master` and
+  `shake` histories were preserved at `refs/archive/mathlib4-1/master` and
+  `refs/archive/mathlib4-1/shake`.
 
 Every source commit was verified as an ancestor of its umbrella's remote main before archival.
 The umbrella READMEs map active proof work versus historical proposal/frontier material and name
