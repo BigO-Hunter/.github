@@ -46,7 +46,7 @@ filterable by row. Private repos hold in-progress work.
 - **Integer Multiplication** (`integer-mult`) — `integer-mult-bounds` (κ > 2⁻¹⁵)
 - **Support & tooling** (`support`) — `bigospeedrun-agent-kit` (the methodology),
   `lemma-library`, `bochner-lane`, `leaps-in-bounds`, `omr-statement`, `mathlib4` (dependency pin),
-  `staircase-port` *(private)*, `verifier`, `verifier-1`, `site`, `c-hd-proof`, `prove2me_workspace`
+  `staircase-port` *(private)*, `verifier`, `site`, `c-hd-proof`, `prove2me_workspace`
 
 ## Repository lifecycle
 
@@ -56,9 +56,11 @@ side by side when both are reproducible evidence (for example `vdw-first-rung` /
 and `matroid-prophet-exact-B` / `matroid-prophet-tight-corner`). Their READMEs name the successor
 or the reason the baseline is retained.
 
-`verifier` and `verifier-1` currently hold different branch heads and different unique audit and
-automation refs. Do not archive either as a duplicate. Consolidate those refs into one fork first,
-verify every ref by name and SHA, and only then retire the other fork. No lossy same-topic merges.
+`verifier-1` was consolidated into `verifier` on 2026-11-20: its mainline was merged at
+`1d01f6e4eeb6bc84617fd5d1a7ca4bcfd231bc7c`, both automation branches were fast-forwarded, and
+`verify-chain-jobs` was already identical. Every source branch was verified as an ancestor of the
+corresponding target branch before `verifier-1` was archived read-only; there were no source tags.
+No lossy same-topic merges.
 
 ## Upstreams & projects we work with
 
