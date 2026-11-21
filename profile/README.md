@@ -19,7 +19,8 @@ filterable by row. Private repos hold in-progress work.
 
 - **Directed SSSP** (`sssp`) — `sssp-chd-row` (n · n log^(2/3)), `sssp-nlogn` (n log n · n log²),
   `sssp-n2` (n²), `sssp-dmsy-stack` *(private)*, `relax-completeness`
-- **APSP & dynamics** (`apsp`) — `apsp-bound`, `minplus-widgets`, `bonifaci-lane`
+- **APSP & dynamics** (`apsp`) — `apsp-bound`, `minplus-widgets`, `bonifaci-lane`, `aft-lane`
+- **3-SAT** (`3sat`) — `sat-decision-program`
 - **Snaky** (`snaky`) — `snaky-nineteen` (19-move), `snaky-twenty` (20-move), `snaky-conditional`
 - **Subset Sum** (`subset-sum`) — `subset-sum` (α=1/2 deterministic MITM),
   `subsetsum-lean` *(private)*, `subset-sum-l25` *(private)*
