@@ -41,7 +41,7 @@ filterable by row. Private repos hold in-progress work.
 - **Physics** (`physics`) — `haldane-gap-beta13` (γ_L > 771/5000)
 - **Sensitivity** (`sensitivity`) — `average-sensitivity-lean`
 - **Integer Multiplication** (`integer-mult`) — `integer-mult-bounds` (κ > 2⁻¹⁵)
-- **Support & tooling** (`support`) — `bigospeedrun-agent-kit` (the methodology),
+- **Support & tooling** (`support`) — `bigospeedrun-agent-kit` (the methodology), `campaign-archive` *(private)*,
   `lemma-library`, `bochner-lane`, `leaps-in-bounds`, `omr-statement`, `mathlib4` (dependency pin),
   `staircase-port` *(private)*, `verifier`, `site`, `c-hd-proof`, `prove2me_workspace`
 
@@ -80,6 +80,14 @@ No lossy same-topic merges.
 Every source commit was verified as an ancestor of its umbrella's remote main before archival.
 The umbrella READMEs map active proof work versus historical proposal/frontier material and name
 any optional external regeneration datasets. These were history-preserving merges, not file dumps.
+
+### Local preservation snapshot
+
+`campaign-archive` is the broad private safety net for unique and unfinished local research, not a
+new active proof lane. It contains 55,992 entries: 33,498 canonical files and 22,494 relative
+duplicate links, totaling 908,540,156 canonical bytes. Source paths and SHA256 are recorded in
+`MANIFEST.json`; build caches, raw transcript databases, oversized artifacts and credential-pattern
+files are excluded and documented in `SKIPPED.md`. No fresh build is claimed for the snapshot.
 
 ## Upstreams & projects we work with
 
