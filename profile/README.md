@@ -84,7 +84,7 @@ any optional external regeneration datasets. These were history-preserving merge
 ### Local preservation snapshot
 
 `campaign-archive` is the broad private safety net for unique and unfinished local research, not a
-new active proof lane. It contains 55,992 entries: 33,498 canonical files and 22,494 relative
+new active proof lane. It contains 55,988 entries: 33,498 canonical files and 22,494 relative
 duplicate links, totaling 908,540,156 canonical bytes. Source paths and SHA256 are recorded in
 `MANIFEST.json`; build caches, raw transcript databases, oversized artifacts and credential-pattern
 files are excluded and documented in `SKIPPED.md`. No fresh build is claimed for the snapshot.
