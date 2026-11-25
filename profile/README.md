@@ -84,13 +84,17 @@ any optional external regeneration datasets. These were history-preserving merge
 ### Local preservation snapshot
 
 `campaign-archive` is the broad private safety net for unique and unfinished local research, not a
-new active proof lane. It contains 125,844 entries: 85,182 canonical files and 40,666 relative
-duplicate links, totaling 4,613,576,523 canonical bytes. Source paths and SHA256 are recorded in
-`MANIFEST.json`; all 125,844 Git blobs passed exact content verification. `RESTORE.md` and
+new active proof lane. It contains 128,838 entries: 87,702 canonical files and 41,136 relative
+duplicate links, totaling 4,697,765,345 canonical bytes. Source paths and SHA256 are recorded in
+`MANIFEST.json`; all 125,844 earlier Git blobs passed exact content verification, as did the two
+later additions — the 1,502-entry volume-gap set and the 1,490-entry retired-notes set (the latter
+re-verified file-by-file against the remote tree on 2026-11-25). `RESTORE.md` and
 `verify_archive.py` provide byte-exact recovery. Build caches, raw transcript databases, oversized
 artifacts and credential-pattern files are excluded and documented in `SKIPPED.md`. The historical
 CLZ certificate is preserved as a hash-verified compressed asset in the private `preservation-extras`
-release, outside the Git snapshot. No fresh build is claimed for the snapshot.
+release, outside the Git snapshot. No fresh build is claimed for the snapshot. See the
+[condensed BigO strike handoff](../research/bigo-strike-handoff.md) for the research map and current
+validation caveats.
 
 ## Upstreams & projects we work with
 
