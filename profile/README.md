@@ -43,7 +43,7 @@ The [live board](https://bigospeedrun.com) is authoritative; this snapshot orien
 - **APSP & dynamics** (`apsp`) — `apsp-bound`, `minplus-widgets`, `bonifaci-lane`, `aft-lane`
 - **3-SAT** (`3sat`) — `sat-decision-program`
 - **Snaky** (`snaky`) — `snaky-nineteen` (19-move), `snaky-twenty` (20-move)
-- **Subset Sum** (`subset-sum`) — `subset-sum` (α = 1/2 deterministic + MITM), `subset-sum-l25` *(private)*
+- **Subset Sum** (`subset-sum`) — `subset-sum` (α = 1/2 deterministic + MITM), `subset-sum-l25` (sub-½ lemma ladder, zero sorries)
 - **Matroid Prophet** (`matroid-prophet`) — `matroid-prophet-tight-corner`, `matroid-statement`
 - **Matmul** (`matmul`) — `matmul-frobenius` *(archived — race closed, OpenAI ω = 9/4)* — Frobenius lane baseline + certificate forensics
 - **Combinatorics** (`combinatorics`) — `ramsey-5-5-lean-certificate` (R(5,5) ≥ 42),
@@ -55,9 +55,9 @@ The [live board](https://bigospeedrun.com) is authoritative; this snapshot orien
   `pi-irrationality-measure` *(archived)*, `dft-halitziyav6-rate`, `heilbronn-triangle-lean`
   (exact-K η ≈ 7.2144e-237), `heilbronn-triangle-ten237` (1/10²³⁷), `heilbronn-bar` *(private)*
 - **Z is Diophantine in Q** (`diophantine`) — `z-diophantine-research`, `dzq-lean` *(private)*
-- **Zeta / Riemann** (`zeta`) — `quasi-riemann-baseline-rerun`, `QuasiRiemannTracker`,
+- **Zeta / Riemann** (`zeta`) — `quasi-riemann-baseline-rerun` *(archived — race closed, Alpöge θ≤1/2)*, `QuasiRiemannTracker`,
   `zeta-zeros-submission`, `zeta-measure-certificates`, `critical-line-269-400` *(archived — H ≥ 269/400 bridge)*,
-  `weil-verify` *(private)*, `knausgard-cert` *(private)*, `clz-cert` *(private)*
+  `weil-verify` (AxiomMath/Weil audit lane), `knausgard-cert`, `clz-cert` *(private)*
 - **Physics** (`physics`) — `haldane-gap-beta13` (certified γ_L > 0.06743)
 - **Sensitivity** (`sensitivity`) — `average-sensitivity-lean` (this fork proves AS ≤ 3.7614546·d·√n, verified; board's current swarm lead is 3.191539, Nov 22 — newer result pending reconciliation into this repo)
 - **Integer Multiplication** (`integer-mult`) — `integer-mult-bounds` (κ > 2⁻¹⁵)
