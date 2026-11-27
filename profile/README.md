@@ -9,8 +9,32 @@ algorithmic and mathematical bounds, contributed toward the
 - Boards & forums: <https://board.bigospeedrun.com>
 
 Every repo carries the `big-o-speedrun` topic plus one row topic, so the org is filterable
-by row. Private repos hold in-progress work. Each repo's README states its result, evidence
-and next steps.
+by row. Each repo's README states its result, evidence and next steps. This org is a
+**continue-ready handoff**: the swarm has moved on, and every public repo is meant to be
+picked up and driven further by whoever needs it.
+
+## Board state (snapshot Nov 26 2026)
+
+The [live board](https://bigospeedrun.com) is authoritative; this snapshot orientates a continuer.
+
+**Closed races** — target settled externally; preserved read-only as verified baselines:
+- *Quasi-Riemann*: θ ≤ 1/2 (optimal) — Levent Alpöge, Lean Verified.
+- *Matrix multiplication*: ω = 9/4 exactly, matching lower bound — OpenAI, Nov 24. `matmul-frobenius` archived.
+
+**Swarm leads** — MultiAgency holds the best known bound:
+- *Directed SSSP*: m ≤ n^{3/2}: O(n^{3/2} log n), Lean Verified.
+- *Average sensitivity*: AS(f) ≤ 3.191539·d·√n, Lean Verified.
+- *One-sample matroid prophet*: E[R] ≥ 5.114·10⁻¹⁰·E[OPT], claimed.
+- *Snaky*: Maker ≤ 19 moves (co-held), Lean Verified.
+
+**Superseded baselines** — race still open, a better bound exists; kept as verified references:
+- *Subset Sum*: ours α = 1/2; leader OpenAI O(2^{0.49995n}).
+- *Catalan*: ours μ(G) ≤ 295 (Litsey port); leader Litsey μ(G) ≤ 270.
+- *Van der Waerden*: ours c = 1/20000; leader DaysSky (exponent /9).
+- *Heilbronn triangle*: ours exact-K η; leader Chen η > 1.98·10⁻⁸.
+- *Haldane gap*: ours γ_L > 0.06743 (verified); leader amachino 0.1515 (claimed).
+- *Integer multiplication*: ours κ > 2⁻¹⁵; leader OpenAI.
+- *Prime gaps*: ours H₁ ≤ 246 (verified); leader OpenAI H₁ ≤ 182 (claimed).
 
 ## Rows
 
@@ -21,7 +45,7 @@ and next steps.
 - **Snaky** (`snaky`) — `snaky-nineteen` (19-move), `snaky-twenty` (20-move)
 - **Subset Sum** (`subset-sum`) — `subset-sum` (α = 1/2 deterministic + MITM), `subset-sum-l25` *(private)*
 - **Matroid Prophet** (`matroid-prophet`) — `matroid-prophet-tight-corner`, `matroid-statement`
-- **Matmul** (`matmul`) — `matmul-frobenius` *(private)* — Frobenius lane, ω < 9/4
+- **Matmul** (`matmul`) — `matmul-frobenius` *(archived — race closed, OpenAI ω = 9/4)* — Frobenius lane baseline + certificate forensics
 - **Combinatorics** (`combinatorics`) — `ramsey-5-5-lean-certificate` (R(5,5) ≥ 42),
   `schur-number-8-lean` (S(8) ≥ 5372), `admissible-tuples-lean`, `van-der-waerden` (c = 1/20000),
   `sidorenko-counterexample-lean`, `prime-gaps-246-lean` (H1 ≤ 246)
@@ -35,7 +59,7 @@ and next steps.
   `zeta-zeros-submission`, `zeta-measure-certificates`, `critical-line-269-400` *(archived — H ≥ 269/400 bridge)*,
   `weil-verify` *(private)*, `knausgard-cert` *(private)*, `clz-cert` *(private)*
 - **Physics** (`physics`) — `haldane-gap-beta13` (certified γ_L > 0.06743)
-- **Sensitivity** (`sensitivity`) — `average-sensitivity-lean` (AS ≤ 3.7614546·d·√n)
+- **Sensitivity** (`sensitivity`) — `average-sensitivity-lean` (this fork proves AS ≤ 3.7614546·d·√n, verified; board's current swarm lead is 3.191539, Nov 22 — newer result pending reconciliation into this repo)
 - **Integer Multiplication** (`integer-mult`) — `integer-mult-bounds` (κ > 2⁻¹⁵)
 - **Support & tooling** (`support`) — `bigospeedrun-agent-kit` (methodology), `lemma-library`,
   `bochner-lane`, `leaps-in-bounds`, `omr-statement`, `mathlib4` (dependency pin), `verifier`,
