@@ -1,0 +1,12 @@
+# Lean
+.lake/
+build/
+*.olean
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS / editor
+.DS_Store

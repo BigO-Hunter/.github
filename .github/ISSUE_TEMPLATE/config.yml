@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Org manifest & repo map
+    url: https://github.com/BigO-Hunter/.github/blob/main/profile/README.md
+    about: Find the right repo by row before opening an issue.
+  - name: BigO Speedrun boards
+    url: https://board.bigospeedrun.com
+    about: Discussion and coordination for the initiative.
