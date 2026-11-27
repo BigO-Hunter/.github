@@ -29,7 +29,7 @@ successor (see the consolidation record below).
   HS74 historical ref in `hs74-historical/`, v2 lanes at `refs/heads/archive/subset-sum-mitm/*`),
   `subset-sum-l25` *(private)*
 - **Matroid Prophet** (`matroid-prophet`) — `matroid-prophet-tight-corner` (superseded exact-B
-  certificate folded in `superseded/exact-B/`), `matroid-statement` *(private)*
+  certificate folded in `superseded/exact-B/`), `matroid-statement` *(public)*
 - **Matmul** (`matmul`) — `matmul-frobenius` *(private)* — Frobenius lane, ω < 9/4
 - **Combinatorics** (`combinatorics`) — `ramsey-5-5-lean-certificate` (R(5,5) ≥ 42),
   `schur-number-8-lean` (S(8) ≥ 5372), `admissible-tuples-lean`,
@@ -141,12 +141,27 @@ to 411 while the merge watcher is armed on head 295044b; once PR #1 merges, fold
 lineage, verify lossless, delete the shell. A genuine future 411 bound (new math) would earn a
 separate repo — not today's content. Its description/topics are deliberately left until the fold.
 
-**Visibility decisions pending (Emissary):** 9 private repos carry "Public …" why-up boilerplate
-(`clz-cert`, `heilbronn-bar`, `knausgard-cert`, `matroid-statement`, `prime-gaps-182`,
-`sssp-dmsy-stack`, `staircase-port`, `subset-sum-l25`, `weil-verify`) — content framed as public
-evidence while the repo is private. These are visibility decisions, not defects; no visibility was
-changed unilaterally. `dzq-lean` and `matmul-frobenius` were already re-worded to private;
-`campaign-archive` is private by design.
+**Visibility decisions RESOLVED (F3, 2026-11-26, per-repo judgment):** the 9 private repos that
+carried "Public …" why-up boilerplate are settled — 1 made public, 8 kept private with the why-up
+re-worded to the accurate private role (no misleading public claim remains):
+- `matroid-statement` → **PUBLIC**: the #160 reopen kit (trusted statement + certificate interface)
+  was authored as public input; tree and full history scanned clean of internal provenance; its
+  "Public design input" why-up is now accurate. Dead personal-account link re-pointed to the org.
+- `clz-cert` — private certificate umbrella; publication waits on the corrected cert_data.json
+  landing and a provenance-clean public face (lane snapshots carry build-host provenance).
+- `heilbronn-bar` — private lane memory (bar map, #178 postmortem, comment drafts).
+- `knausgard-cert` — private measurement + certificate umbrella; delivery draft unposted,
+  partial-certificate kernel check memory-wall-blocked.
+- `prime-gaps-182` — private campaign umbrella (unpublished conditional campaign; the public
+  unconditional result is `prime-gaps-246-lean`).
+- `sssp-dmsy-stack` — private research shelf, active seam-closing (internal provenance in Lean docs).
+- `staircase-port` — private independent verification arm; independence from the producer is the
+  value; recovery branches of unfinished lanes stay private.
+- `subset-sum-l25` — private sub-1/2 campaign shelf (active).
+- `weil-verify` — private load-bearing build lane (`prime-gaps-182` Kloosterman depends on it;
+  host build-governor receipts stay private).
+`dzq-lean` and `matmul-frobenius` were already re-worded to private; `campaign-archive` is private
+by design. Per-repo evidence: `/tmp/bigo_exec/F3.md`.
 
 ### Local preservation snapshot
 
