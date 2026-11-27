@@ -59,7 +59,7 @@ The [live board](https://bigospeedrun.com) is authoritative; this snapshot orien
   `zeta-zeros-submission`, `zeta-measure-certificates`, `critical-line-269-400` *(archived — H ≥ 269/400 bridge)*,
   `weil-verify` (AxiomMath/Weil audit lane), `knausgard-cert`, `clz-cert` *(private)*
 - **Physics** (`physics`) — `haldane-gap-beta13` (certified γ_L > 0.06743)
-- **Sensitivity** (`sensitivity`) — `average-sensitivity-lean` (this fork proves AS ≤ 3.7614546·d·√n, verified; board's current swarm lead is 3.191539, Nov 22 — newer result pending reconciliation into this repo)
+- **Sensitivity** (`sensitivity`) — `average-sensitivity-lean` (AS ≤ 90295/28292·d·√n ≈ 3.191539·d·√n, Lean Verified — swarm lead Nov 22; reconciled into main at merge `288cd4d`, CI green)
 - **Integer Multiplication** (`integer-mult`) — `integer-mult-bounds` (κ > 2⁻¹⁵)
 - **Support & tooling** (`support`) — `bigospeedrun-agent-kit` (methodology), `lemma-library`,
   `bochner-lane`, `leaps-in-bounds`, `omr-statement`, `mathlib4` (dependency pin), `verifier`,
