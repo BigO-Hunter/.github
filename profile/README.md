@@ -45,7 +45,7 @@ successor (see the consolidation record below).
   `catalan-constant-gen5` (μ(G) ≤ 528.2315, GEN-6), `dft-halitziyav6-rate`, `heilbronn-triangle-lean`
   (exact-K η ≈ 7.2144e-237, verifier#184), `heilbronn-triangle-ten237` (1/10^237, board pin),
   `heilbronn-bar` *(private)*
-- **Z is Diophantine in Q** (`z-diophantine`) — `z-diophantine-research`, `dzq-lean` *(private)*
+- **Z is Diophantine in Q** (`diophantine`) — `z-diophantine-research`, `dzq-lean` *(private)*
 - **Zeta / Riemann** (`zeta`) — `quasi-riemann-baseline-rerun` (PR#103 rerun folded in `pr103-rerun/`),
   `QuasiRiemannTracker`, `zeta-zeros-submission` (original proposal in `proposal/`),
   `zeta-measure-certificates`, `critical-line-269-400` *(archived in place — only public H ≥ 269/400
